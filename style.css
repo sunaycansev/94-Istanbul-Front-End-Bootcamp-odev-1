@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+#getFullNameBtn {
+  min-width: 100px;
+  min-height: 50px;
+  padding: 15px;
+  margin: 2rem 0;
+  background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in;
+  color: #000;
+}
+#getFullNameBtn:hover {
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+  cursor: pointer;
+}
+.button-grow {
+  color: #65b5f6;
+  background-color: transparent;
+  border: 1px solid #65b5f6;
+  border-radius: 4px;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-grow:hover {
+  transform: scale(1.1);
+}
+#linkedinUrl {
+  margin: 0 2rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #600613;
+  transition: all 0.3s ease-in;
+}
+#linkedinUrl:hover {
+  color: #101ca7;
+}
+#githubUrl {
+  text-decoration: none;
+  margin: 0 2rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #600613;
+  transition: all 0.3s ease-out;
+}
+#githubUrl:hover {
+  color: #73a;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+h1 {
+  margin: 2rem 0;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #d13537;
+}
+h2 {
+  margin: 2rem 0;
+  font-weight: 600;
+  letter-spacing: 4px;
+  font-size: 2rem;
+  color: #10053d;
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  a {
+    font-size: 0.8rem;
+
+    display: block;
+  }
+  #linkedinUrl {
+    margin-bottom: 1rem;
+  }
+}
